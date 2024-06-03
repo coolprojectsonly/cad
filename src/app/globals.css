@@ -1,0 +1,101 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+}
+
+.container h1 {
+  text-align: center;
+  font-family: kolak;
+  color: white;
+}
+
+.formInput span {
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(to right, blue, red);
+  bottom: 14px;
+  transition: 0.5s ease-in-out;
+}
+
+.formInput input:focus ~ span {
+  width: 300px;
+}
+
+.container {
+  width: 100vw;
+  height: 90vh;
+}
+
+.wrapper {
+  /* border: 1px solid white; */
+  width: 600px;
+  height: 400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  width: 500px;
+  height: 350px;
+  margin: 0 auto;
+  border: 1px solid red;
+  box-shadow: 10px 0px 10px 0px gold;
+  margin-left: 70px;
+}
+
+.formInput label {
+  color: wheat;
+  position: absolute;
+  font-size: 20px;
+}
+
+.formInput {
+  /* background: red; */
+  width: 500px;
+  height: 50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.formInput input {
+  width: 300px;
+  height: 35px;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: none;
+  background-color: black;
+  color: white;
+  outline: none;
+}
+.sub {
+  /* background: gray; */
+  margin: 0 auto;
+  width: 500px;
+  height: 50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.sub .button {
+  width: 200px;
+  height: 38px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  background-color: red;
+
+  display: grid;
+  place-items: center;
+  place-content: center;
+}
+
+.sub h4 {
+  text-align: center;
+  font-size: 16px;
+}
